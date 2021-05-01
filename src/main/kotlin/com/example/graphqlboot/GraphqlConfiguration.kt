@@ -10,7 +10,7 @@ class GraphqlConfiguration {
 	@Bean
 	fun schemaParser() : SchemaParser = SchemaParser.newParser()
 			.file("schema.graphql")
-			.resolvers(BookQueryResolver())
+			.resolvers(BookQueryResolver(), BookMutationResolver())
 			.build()
 
 }

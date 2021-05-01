@@ -2,8 +2,16 @@ type Query {
     bookById: Book
 }
 
+type Mutation {
+    addBook(book: InputBook): Book
+}
+
 type Book {
     id: Int
+    name: String
+}
+
+input InputBook {
     name: String
 }
 

@@ -1,5 +1,6 @@
 package com.example.graphqlboot
 
+import com.example.graphqlboot.dto.Book
 import graphql.kickstart.tools.GraphQLQueryResolver
 import org.springframework.stereotype.Component
 
